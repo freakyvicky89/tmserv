@@ -2,23 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a7c608d-250d-44c8-80c3-eda33b5e61ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmserv-ai/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmserv-ai/src/main/java/net/ddns/freakyvicky/tmserv/ai/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmserv-ai/tmserv-ai.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmserv-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmserv-service/src/main/java/net/ddns/freakyvicky/tmserv/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmserv-service/src/main/java/net/ddns/freakyvicky/tmserv/rest/TextMiningResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmserv-service/src/main/java/net/ddns/freakyvicky/tmserv/rest/model/LoadResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmserv-service/src/main/java/net/ddns/freakyvicky/tmserv/rest/model/TextRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmserv-ai/src/main/java/net/ddns/freakyvicky/tmserv/ai/GloveFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmserv-ai/src/main/java/net/ddns/freakyvicky/tmserv/ai/glove/DefaultGloveFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmserv-ai/src/main/java/net/ddns/freakyvicky/tmserv/ai/glove/GloveWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmserv-commons/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmserv-commons/src/main/java/net/ddns/freakyvicky/tmserv/util/CommonsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmserv-commons/src/main/java/net/ddns/freakyvicky/tmserv/util/ConfigurationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmserv-commons/src/main/java/net/ddns/freakyvicky/tmserv/util/Property.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmserv.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmserv-ai/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tmserv-ai/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmserv-ai/src/main/java/net/ddns/freakyvicky/tmserv/ai/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/tmserv-ai/src/main/java/net/ddns/freakyvicky/tmserv/ai/AiConfig.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/tmserv-core/target/" />
     <ignored path="$PROJECT_DIR$/tmserv-service/target/" />
     <ignored path="$PROJECT_DIR$/tmserv-ai/target/" />
+    <ignored path="$PROJECT_DIR$/tmserv-commons/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,30 +29,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/tmserv-ai/src/main/java/net/ddns/freakyvicky/tmserv/ai/glove/DefaultGloveFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tmserv-service/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tmserv-service/src/main/java/net/ddns/freakyvicky/tmserv/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="255">
+              <caret line="23" column="54" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="23" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,14 +42,86 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tmserv-service/src/main/java/net/ddns/freakyvicky/tmserv/rest/TextMiningResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="225">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tmserv-commons/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tmserv-commons/src/main/java/net/ddns/freakyvicky/tmserv/util/ConfigurationService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1216#1217#0" expanded="true" />
+                <element signature="e#1251#1252#0" expanded="true" />
+                <element signature="e#1338#1339#0" expanded="true" />
+                <element signature="e#1373#1374#0" expanded="true" />
+                <element signature="e#1457#1458#0" expanded="true" />
+                <element signature="e#1492#1493#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tmserv-commons/src/main/java/net/ddns/freakyvicky/tmserv/util/Property.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+              <folding>
+                <element signature="e#325#326#0" expanded="true" />
+                <element signature="e#357#358#0" expanded="true" />
+                <element signature="e#196#197#0" expanded="true" />
+                <element signature="e#223#224#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tmserv-ai/src/main/java/net/ddns/freakyvicky/tmserv/ai/AiConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tmserv-commons/src/main/java/net/ddns/freakyvicky/tmserv/util/CommonsConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tmserv.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="9" selection-start-line="6" selection-end-line="6" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -72,61 +129,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tmserv-ai/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tmserv-ai/src/main/java/net/ddns/freakyvicky/tmserv/ai/Config.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="465">
+              <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tmserv-service/src/main/java/net/ddns/freakyvicky/tmserv/rest/model/LoadResponse.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-              <folding>
-                <element signature="e#298#299#0" expanded="true" />
-                <element signature="e#330#331#0" expanded="true" />
-                <element signature="e#364#365#0" expanded="true" />
-                <element signature="e#394#395#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tmserv-service/src/main/java/net/ddns/freakyvicky/tmserv/rest/model/TextRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-              <folding>
-                <element signature="e#178#179#0" expanded="true" />
-                <element signature="e#210#211#0" expanded="true" />
-                <element signature="e#369#370#0" expanded="true" />
-                <element signature="e#401#402#0" expanded="true" />
-                <element signature="e#432#433#0" expanded="true" />
-                <element signature="e#459#460#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.0.RELEASE/spring-boot-2.1.0.RELEASE-sources.jar!/org/springframework/boot/SpringApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="1274" column="23" selection-start-line="1274" selection-start-column="23" selection-end-line="1274" selection-end-column="23" />
+            <state relative-caret-position="300">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -136,7 +149,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -153,9 +168,26 @@
         <option value="$PROJECT_DIR$/tmserv-core/src/main/java/net/ddns/freakyvicky/tmserv/rest/TextMiningResource.java" />
         <option value="$PROJECT_DIR$/tmserv-service/pom.xml" />
         <option value="$PROJECT_DIR$/tmserv-service/src/main/java/net/ddns/freakyvicky/tmserv/rest/TextMiningResource.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/tmserv-ai/pom.xml" />
         <option value="$PROJECT_DIR$/tmserv-ai/src/main/java/net/ddns/freakyvicky/tmserv/ai/Configuration.java" />
+        <option value="$PROJECT_DIR$/tmserv-ai/src/main/java/net/ddns/freakyvicky/tmserv/ai/DefaultGloveFactory.java" />
+        <option value="$PROJECT_DIR$/tmserv-ai/src/main/java/net/ddns/freakyvicky/tmserv/ai/services/DefaultGloveFactory.java" />
+        <option value="$PROJECT_DIR$/tmserv-ai/src/main/java/net/ddns/freakyvicky/tmserv/ai/model/Glove.java" />
+        <option value="$PROJECT_DIR$/tmserv-ai/src/main/java/net/ddns/freakyvicky/tmserv/ai/model/GloveFO.java" />
+        <option value="$PROJECT_DIR$/tmserv-ai/src/main/java/net/ddns/freakyvicky/tmserv/ai/model/GloveWrapper.java" />
+        <option value="$PROJECT_DIR$/tmserv-ai/src/main/java/net/ddns/freakyvicky/tmserv/ai/glove/GloveWrapper.java" />
+        <option value="$PROJECT_DIR$/tmserv-ai/src/main/java/net/ddns/freakyvicky/tmserv/ai/GloveFactory.java" />
+        <option value="$PROJECT_DIR$/tmserv.properties" />
+        <option value="$PROJECT_DIR$/tmserv-ai/pom.xml" />
+        <option value="$PROJECT_DIR$/tmserv-commons/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/tmserv-commons/src/main/java/net/ddns/freakyvicky/tmserv/util/TMServConfiguration.java" />
+        <option value="$PROJECT_DIR$/tmserv-commons/src/main/java/net/ddns/freakyvicky/tmserv/util/Config.java" />
+        <option value="$PROJECT_DIR$/tmserv-commons/src/main/java/net/ddns/freakyvicky/tmserv/util/CommonsConfig.java" />
+        <option value="$PROJECT_DIR$/tmserv-ai/src/main/java/net/ddns/freakyvicky/tmserv/ai/Config.java" />
+        <option value="$PROJECT_DIR$/tmserv-commons/src/main/java/net/ddns/freakyvicky/tmserv/util/ConfigurationService.java" />
+        <option value="$PROJECT_DIR$/tmserv-ai/src/main/java/net/ddns/freakyvicky/tmserv/ai/glove/DefaultGloveFactory.java" />
+        <option value="$PROJECT_DIR$/tmserv-commons/src/main/java/net/ddns/freakyvicky/tmserv/util/Property.java" />
+        <option value="$PROJECT_DIR$/tmserv-ai/src/main/java/net/ddns/freakyvicky/tmserv/ai/AiConfig.java" />
       </list>
     </option>
   </component>
@@ -171,7 +203,7 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="tmserv" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="tmserv-ai" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
       </expand>
       <select />
@@ -189,8 +221,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -236,6 +268,34 @@
             <path>
               <item name="tmserv" type="b2602c69:ProjectViewProjectNode" />
               <item name="tmserv" type="462c0819:PsiDirectoryNode" />
+              <item name="tmserv-ai" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ai" type="462c0819:PsiDirectoryNode" />
+              <item name="glove" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tmserv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tmserv" type="462c0819:PsiDirectoryNode" />
+              <item name="tmserv-commons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tmserv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tmserv" type="462c0819:PsiDirectoryNode" />
+              <item name="tmserv-commons" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tmserv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tmserv" type="462c0819:PsiDirectoryNode" />
+              <item name="tmserv-commons" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tmserv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tmserv" type="462c0819:PsiDirectoryNode" />
               <item name="tmserv-service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -259,6 +319,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="tmserv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tmserv" type="462c0819:PsiDirectoryNode" />
+              <item name="tmserv-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tmserv" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tmserv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tmserv" type="462c0819:PsiDirectoryNode" />
+              <item name="tmserv-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tmserv" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -266,7 +345,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544378673227" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545052579115" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="net.ddns.freakyvicky.tmserv.util" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -299,16 +385,13 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.24964234" />
-      <window_info id="Structure" order="1" sideWeight="0.50120485" side_tool="true" visible="true" weight="0.24964234" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49518073" visible="true" weight="0.19456366" />
+      <window_info id="Structure" order="1" sideWeight="0.5048193" side_tool="true" visible="true" weight="0.19456366" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -316,14 +399,17 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" weight="0.3297568" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.18526466" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
@@ -341,16 +427,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.0.RELEASE/spring-boot-2.1.0.RELEASE-sources.jar!/org/springframework/boot/SpringApplication.java">
+    <entry file="file://$PROJECT_DIR$/tmserv-ai/src/main/java/net/ddns/freakyvicky/tmserv/ai/model.java" />
+    <entry file="file://$PROJECT_DIR$/tmserv-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="1274" column="23" selection-start-line="1274" selection-start-column="23" selection-end-line="1274" selection-end-column="23" />
+        <state relative-caret-position="165">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.2.RELEASE/spring-context-5.1.2.RELEASE.jar!/org/springframework/stereotype/Component.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.2.RELEASE/spring-context-5.1.2.RELEASE.jar!/org/springframework/stereotype/Service.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tmserv-service/src/main/java/net/ddns/freakyvicky/tmserv/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="105">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -358,13 +459,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.0.RELEASE/spring-boot-2.1.0.RELEASE-sources.jar!/org/springframework/boot/SpringApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17460">
+          <caret line="1274" column="23" selection-start-line="1274" selection-start-column="23" selection-end-line="1274" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmserv-service/src/main/java/net/ddns/freakyvicky/tmserv/rest/model/LoadResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tmserv-service/src/main/java/net/ddns/freakyvicky/tmserv/rest/model/TextRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
+        <state relative-caret-position="315">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
-            <element signature="e#178#179#0" expanded="true" />
-            <element signature="e#210#211#0" expanded="true" />
             <element signature="e#369#370#0" expanded="true" />
             <element signature="e#401#402#0" expanded="true" />
             <element signature="e#432#433#0" expanded="true" />
@@ -373,54 +486,146 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tmserv-service/src/main/java/net/ddns/freakyvicky/tmserv/rest/TextMiningResource.java">
+    <entry file="file://$PROJECT_DIR$/tmserv-ai/src/main/java/net/ddns/freakyvicky/tmserv/ai/glove/GloveWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <element signature="e#227#228#0" expanded="true" />
+            <element signature="e#255#256#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#363#364#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmserv-ai/src/main/java/net/ddns/freakyvicky/tmserv/ai/GloveFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="59" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/deeplearning4j/deeplearning4j-nlp/1.0.0-beta3/deeplearning4j-nlp-1.0.0-beta3.jar!/org/deeplearning4j/text/sentenceiterator/LineSentenceIterator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/deeplearning4j/deeplearning4j-nlp/1.0.0-beta3/deeplearning4j-nlp-1.0.0-beta3.jar!/org/deeplearning4j/text/sentenceiterator/SentenceIterator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/deeplearning4j/deeplearning4j-nlp/1.0.0-beta3/deeplearning4j-nlp-1.0.0-beta3.jar!/org/deeplearning4j/text/sentenceiterator/CollectionSentenceIterator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/deeplearning4j/deeplearning4j-nlp/1.0.0-beta3/deeplearning4j-nlp-1.0.0-beta3.jar!/org/deeplearning4j/text/sentenceiterator/BaseSentenceIterator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmserv.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="9" selection-start-line="6" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmserv-ai/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmserv-commons/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmserv-commons/src/main/java/net/ddns/freakyvicky/tmserv/util/CommonsConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmserv-ai/src/main/java/net/ddns/freakyvicky/tmserv/ai/glove/DefaultGloveFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="54" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="23" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tmserv-service/pom.xml">
+    <entry file="file://$PROJECT_DIR$/tmserv-commons/src/main/java/net/ddns/freakyvicky/tmserv/util/Property.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tmserv-service/src/main/java/net/ddns/freakyvicky/tmserv/rest/model/LoadResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="285">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
           <folding>
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#196#197#0" expanded="true" />
+            <element signature="e#223#224#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tmserv-ai/pom.xml">
+    <entry file="file://$PROJECT_DIR$/tmserv-ai/src/main/java/net/ddns/freakyvicky/tmserv/ai/AiConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        <state relative-caret-position="105">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tmserv-ai/src/main/java/net/ddns/freakyvicky/tmserv/ai/Config.java">
+    <entry file="file://$PROJECT_DIR$/tmserv-commons/src/main/java/net/ddns/freakyvicky/tmserv/util/ConfigurationService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1216#1217#0" expanded="true" />
+            <element signature="e#1251#1252#0" expanded="true" />
+            <element signature="e#1338#1339#0" expanded="true" />
+            <element signature="e#1373#1374#0" expanded="true" />
+            <element signature="e#1457#1458#0" expanded="true" />
+            <element signature="e#1492#1493#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmserv-service/src/main/java/net/ddns/freakyvicky/tmserv/rest/TextMiningResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
