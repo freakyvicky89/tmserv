@@ -1,6 +1,8 @@
 package net.ddns.freakyvicky.tmserv.util;
 
 public enum Property {
+    SERVICE_PORT("service.port"),
+
     ALPHA("alpha"),
     LEARNING_RATE("learningRate"),
     EPOCHS("epochs"),

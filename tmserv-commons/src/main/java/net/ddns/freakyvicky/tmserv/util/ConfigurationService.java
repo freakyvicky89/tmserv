@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 public class ConfigurationService {
 
     private static final String TMSERV_PROPERTIES = "tmserv.properties";
+    public static final String BASE_PATH = "..";
 
     private Configuration configuration;
 
@@ -22,7 +23,8 @@ public class ConfigurationService {
         FileBasedConfigurationBuilder<FileBasedConfiguration> builder =
                 new FileBasedConfigurationBuilder<FileBasedConfiguration>(PropertiesConfiguration.class)
                         .configure(params.properties()
-                                .setFileName(TMSERV_PROPERTIES));
+                                .setFileName(TMSERV_PROPERTIES)
+                                .setBasePath(BASE_PATH));
 
         configuration = builder.getConfiguration();
 

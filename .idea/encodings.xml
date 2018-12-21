@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" addBOMForNewFiles="with NO BOM" />
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tms-ai-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tmserv-ai" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tmserv-commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tmserv-service" charset="UTF-8" />
+  </component>
 </project>
