@@ -1,13 +1,17 @@
 package net.ddns.freakyvicky.tmserv.rest.model;
 
-public class LoadResponse {
+public class StatusResponse {
 
     Integer errorCode;
     String message;
 
-    public LoadResponse(Integer errorCode, String message) {
+    public StatusResponse(Integer errorCode, String message) {
         this.errorCode = errorCode;
         this.message = message;
+    }
+
+    public static StatusResponse ok() {
+        return new StatusResponse(0, "OK.");
     }
 
     public Integer getErrorCode() {
