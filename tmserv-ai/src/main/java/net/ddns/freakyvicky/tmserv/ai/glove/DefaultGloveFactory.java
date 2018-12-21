@@ -23,6 +23,10 @@ public class DefaultGloveFactory implements GloveFactory {
     @Resource
     private ConfigurationService configurationService;
 
+    public DefaultGloveFactory(ConfigurationService configurationService) {
+        this.configurationService = configurationService;
+    }
+
     public GloveWrapper getFittedGlove(String input, int reference) {
 
         TokenizerFactory tokenizerFactory = new DefaultTokenizerFactory();
@@ -46,7 +50,11 @@ public class DefaultGloveFactory implements GloveFactory {
                 .symmetric(configurationService.getBoolean(Property.SYMMETRIC))
                 .build();
 
-        return null;
+        glove.fit();
+
+        GloveWrapper gloveWrapper = new GloveWrapper(glove, reference);
+
+        return gloveWrapper;
     }
 
 }

@@ -12,6 +12,7 @@
         <module>tmserv-service</module>
         <module>tmserv-ai</module>
         <module>tmserv-commons</module>
+        <module>tms-ai-api</module>
     </modules>
 
     <parent>
