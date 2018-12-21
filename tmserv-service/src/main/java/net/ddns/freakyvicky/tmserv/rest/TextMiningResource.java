@@ -3,8 +3,9 @@ package net.ddns.freakyvicky.tmserv.rest;
 import net.ddns.freakyvicky.tmserv.ai.LoadingService;
 import net.ddns.freakyvicky.tmserv.rest.model.LoadResponse;
 import net.ddns.freakyvicky.tmserv.rest.model.TextRequest;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
@@ -21,8 +22,9 @@ public class TextMiningResource {
         this.loadingService = loadingService;
     }
 
-    @RequestMapping(path = "/load", method = POST)
-    public LoadResponse loadData(@RequestParam TextRequest request) {
+    @ResponseBody
+    @RequestMapping(path = "/tmserv", method = POST)
+    public LoadResponse loadData(@RequestBody TextRequest request) {
 
         loadingService.loadData(request.getText(), request.getReference());
 

@@ -3,14 +3,14 @@ package net.ddns.freakyvicky.tmserv.rest.model;
 public class TextRequest {
 
     protected Integer reference;
+
     protected String text;
 
-    public TextRequest(String text) {
-        this.text = text;
+    public void setReference(Integer reference) {
+        this.reference = reference;
     }
 
-    public TextRequest(Integer reference, String text) {
-        this.reference = reference;
+    public void setText(String text) {
         this.text = text;
     }
 
