@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a7c608d-250d-44c8-80c3-eda33b5e61ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tmserv-commons/src/main/java/net/ddns/freakyvicky/tmserv/util/ExceptionHandlingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmserv-commons/src/main/java/net/ddns/freakyvicky/tmserv/util/ServerMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmserv-service/src/main/java/net/ddns/freakyvicky/tmserv/rest/TextMiningResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/tmserv-service/src/main/java/net/ddns/freakyvicky/tmserv/rest/TextMiningResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmserv-service/src/main/java/net/ddns/freakyvicky/tmserv/rest/model/LoadResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/tmserv-service/src/main/java/net/ddns/freakyvicky/tmserv/rest/model/StatusResponse.java" afterDir="false" />
-    </list>
+    <list default="true" id="6a7c608d-250d-44c8-80c3-eda33b5e61ac" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/tmserv-core/target/" />
@@ -26,7 +20,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tmserv-service/src/main/java/net/ddns/freakyvicky/tmserv/rest/TextMiningResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
+            <state relative-caret-position="570">
               <caret line="40" column="83" selection-start-line="40" selection-start-column="83" selection-end-line="40" selection-end-column="83" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -444,7 +438,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545433519733" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545433703950" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
@@ -484,8 +478,8 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4896" visible="true" weight="0.17381974" />
-      <window_info id="Structure" order="1" sideWeight="0.5104" side_tool="true" visible="true" weight="0.17381974" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49036145" visible="true" weight="0.17381974" />
+      <window_info id="Structure" order="1" sideWeight="0.50963855" side_tool="true" visible="true" weight="0.17381974" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -493,7 +487,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24698795" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24698795" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -505,7 +499,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.18526466" />
+      <window_info active="true" anchor="right" id="Maven" order="4" visible="true" weight="0.18526466" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -874,7 +868,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tmserv-service/src/main/java/net/ddns/freakyvicky/tmserv/rest/TextMiningResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
+        <state relative-caret-position="570">
           <caret line="40" column="83" selection-start-line="40" selection-start-column="83" selection-end-line="40" selection-end-column="83" />
           <folding>
             <element signature="imports" expanded="true" />
