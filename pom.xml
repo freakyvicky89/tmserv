@@ -12,25 +12,27 @@
         <module>tmserv-service</module>
         <module>tmserv-ai</module>
         <module>tmserv-commons</module>
-        <module>tms-ai-api</module>
+        <module>tmserv-ai-impl</module>
+        <module>tmserv-db-impl</module>
     </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.0.RELEASE</version>
-        <relativePath></relativePath>
+        <relativePath/>
     </parent>
 
     <properties>
         <start-class>net.ddns.freakyvicky.tmserv.Application</start-class>
+        <spring-boot-version>2.1.0.RELEASE</spring-boot-version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>2.1.0.RELEASE</version>
+            <version>${spring-boot-version}</version>
         </dependency>
     </dependencies>
 

@@ -14,11 +14,20 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class Application extends SpringApplication {
 
     private static final String LABEL_SERVER_PORT = "server.port";
-    private static final String PORT = "8080";
+    private static final String DEFAULT_PORT = "8080";
 
     public static void main(String[] args) {
+
+        String port;
+
+        if (args.length > 1) {
+            port = args[1];
+        } else {
+            port = DEFAULT_PORT;
+        }
+
         new SpringApplicationBuilder(Application.class)
-                .properties(LABEL_SERVER_PORT, PORT)
+                .properties(LABEL_SERVER_PORT, port)
                 .registerShutdownHook(true)
                 .run(args);
     }

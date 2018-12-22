@@ -34,7 +34,7 @@ public class DefaultGloveFactory implements GloveFactory {
 
         SentenceIterator iterator = new CollectionSentenceIterator(
                 Arrays.stream(input.split(SENTENCE_SPLIT))
-                        .map(sentence -> sentence.strip())
+                        .map(String::strip)
                         .collect(Collectors.toList()));
 
         Glove glove = new Glove.Builder()

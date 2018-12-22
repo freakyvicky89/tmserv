@@ -9,7 +9,7 @@ import javax.annotation.Resource;
 public class DefaultLoadingService implements LoadingService {
 
     @Resource
-    GloveFactory gloveFactory;
+    private GloveFactory gloveFactory;
 
     public DefaultLoadingService(GloveFactory gloveFactory) {
         this.gloveFactory = gloveFactory;
