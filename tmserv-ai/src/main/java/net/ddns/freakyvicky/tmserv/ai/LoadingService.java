@@ -1,7 +1,9 @@
 package net.ddns.freakyvicky.tmserv.ai;
 
+import net.ddns.freakyvicky.tmserv.util.model.Sample;
+
 public interface LoadingService {
 
-    void loadData(String input, int reference);
+    void loadAndCheckData(Sample sample);
 
 }

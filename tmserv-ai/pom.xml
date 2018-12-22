@@ -10,5 +10,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>tms-ai-api</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>net.ddns.freakyvicky</groupId>
+            <artifactId>tmserv-commons</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
 </project>

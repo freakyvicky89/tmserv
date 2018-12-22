@@ -63,6 +63,20 @@
             <scope>compile</scope>
         </dependency>
 
+        <dependency>
+            <groupId>net.ddns.freakyvicky</groupId>
+            <artifactId>tmserv-db</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>net.ddns.freakyvicky</groupId>
+            <artifactId>tmserv-db-impl</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>runtime</scope>
+        </dependency>
+
     </dependencies>
 
 </project>

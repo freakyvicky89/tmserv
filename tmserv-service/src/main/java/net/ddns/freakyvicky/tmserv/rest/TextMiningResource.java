@@ -2,7 +2,7 @@ package net.ddns.freakyvicky.tmserv.rest;
 
 import net.ddns.freakyvicky.tmserv.ai.LoadingService;
 import net.ddns.freakyvicky.tmserv.rest.model.StatusResponse;
-import net.ddns.freakyvicky.tmserv.rest.model.TextRequest;
+import net.ddns.freakyvicky.tmserv.util.model.Sample;
 import net.ddns.freakyvicky.tmserv.util.ExceptionHandlingService;
 import net.ddns.freakyvicky.tmserv.util.ServerMessage;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -29,12 +29,12 @@ public class TextMiningResource {
 
     @ResponseBody
     @RequestMapping(path = "/tmserv", method = PUT)
-    public StatusResponse loadData(@RequestBody TextRequest request) {
+    public StatusResponse loadData(@RequestBody Sample request) {
 
         StatusResponse response;
 
         try {
-            loadingService.loadData(request.getText(), request.getReference());
+            loadingService.loadAndCheckData(request);
             response = StatusResponse.ok();
         } catch (Exception e) {
             ServerMessage message = exceptionHandlingService.getMessageFromException(e);

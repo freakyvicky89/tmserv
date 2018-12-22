@@ -3,12 +3,14 @@ package net.ddns.freakyvicky.tmserv.ai.glove;
 import net.ddns.freakyvicky.tmserv.ai.GloveFactory;
 import net.ddns.freakyvicky.tmserv.util.ConfigurationService;
 import net.ddns.freakyvicky.tmserv.util.Property;
+import net.ddns.freakyvicky.tmserv.util.model.Sample;
 import org.deeplearning4j.models.glove.Glove;
 import org.deeplearning4j.text.sentenceiterator.CollectionSentenceIterator;
 import org.deeplearning4j.text.sentenceiterator.SentenceIterator;
 import org.deeplearning4j.text.tokenization.tokenizer.preprocessor.CommonPreprocessor;
 import org.deeplearning4j.text.tokenization.tokenizerfactory.DefaultTokenizerFactory;
 import org.deeplearning4j.text.tokenization.tokenizerfactory.TokenizerFactory;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -27,13 +29,14 @@ public class DefaultGloveFactory implements GloveFactory {
         this.configurationService = configurationService;
     }
 
-    public GloveWrapper getFittedGlove(String input, int reference) {
+    @Cacheable("gloves")
+    public GloveWrapper getFittedGlove(Sample sample) {
 
         TokenizerFactory tokenizerFactory = new DefaultTokenizerFactory();
         tokenizerFactory.setTokenPreProcessor(new CommonPreprocessor());
 
         SentenceIterator iterator = new CollectionSentenceIterator(
-                Arrays.stream(input.split(SENTENCE_SPLIT))
+                Arrays.stream(sample.getText().split(SENTENCE_SPLIT))
                         .map(String::strip)
                         .collect(Collectors.toList()));
 
@@ -52,7 +55,7 @@ public class DefaultGloveFactory implements GloveFactory {
 
         glove.fit();
 
-        GloveWrapper gloveWrapper = new GloveWrapper(glove, reference);
+        GloveWrapper gloveWrapper = new GloveWrapper(glove, sample.getReference());
 
         return gloveWrapper;
     }

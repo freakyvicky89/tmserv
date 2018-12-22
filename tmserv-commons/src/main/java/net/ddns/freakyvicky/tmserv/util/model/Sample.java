@@ -1,10 +1,18 @@
-package net.ddns.freakyvicky.tmserv.rest.model;
+package net.ddns.freakyvicky.tmserv.util.model;
 
-public class TextRequest {
+public class Sample {
 
     protected Integer reference;
 
     protected String text;
+
+    public Sample() {
+    }
+
+    public Sample(Integer reference, String text) {
+        this.reference = reference;
+        this.text = text;
+    }
 
     public void setReference(Integer reference) {
         this.reference = reference;
